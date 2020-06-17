@@ -47,6 +47,9 @@
 % Links
 \RequirePackage{hyperref}
 
+% Fach
+\RequirePackage[ngerman]{babel}
+
 % ----- Frage -------------------------------------------------------------
 \newcounter{questionCounter}
 \newcounter{partCounter}[questionCounter]
