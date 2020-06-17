@@ -1,0 +1,35 @@
+\documentclass[11pt,largemargins]{homework}
+\newcommand{\hwname}{Milan Andreew}
+\newcommand{\hwemail}{milanand}
+\newcommand{\hwtype}{Hausaufgabe}
+\newcommand{\hwnum}{4}
+\newcommand{\hwclass}{MSG:}
+\newcommand{\hwlecture}{17.06.}
+\newcommand{\hwsection}{2020}
+
+\begin{document}
+\maketitle
+
+\question
+\textit{Weise nach: Für jede natürliche Zahl \(n\) ist \(n^3+(n+1)^3+(n+2)^3\) durch \(9\) teilbar.}
+\begin{align*}
+(n+1)^3 + (n+2)^3 + (n+3)^3 &= (n+1)^3 + (n+2)^3 + \Bigl( n^3 + 9n^2 + 27n + 81\Bigr)\\
+&= n^3 + (n+1)^3 + (n+2)^3 + \Bigl( 9n^2 + 27n + 81\Bigr)
+\end{align*}
+\textbf{Wenn} \(n^3 + (n+1)^3 + (n+2)^3\) durch 9 teilbar ist, \textbf{dann} ist \((n+1)^3 + (n+2)^3 + (n+3)^3\) auch durch 9 teilbar.
+\question
+\textit{Weise nach: Für jede natürliche Zahl \(n\) ist \(11^{n+2}+12^{2n+1}\) durch \(133\) teilbar.}
+\begin{align*}
+11^{n+2}+12^{2n+1}=11^2\cdot 11^n+12\cdot 12^{2n} = 121 \cdot 11^n + 12 \cdot 144^n \\
+= 121\cdot 11^n + 12\cdot(133+11)^n \\
+\Longleftrightarrow 121\cdot 11^n+12\cdot11^n = 133\cdot 11^n \\
+\Longleftrightarrow 0 (\mod 133)
+\end{align*}
+\question
+\begin{alphaparts}
+	\questionpart \textit{Begründe die Schritte der folgenden Umformung:}
+\end{alphaparts}
+\begin{alphaparts}
+	\questionpart \textit{Beweise durch vollständige Induktion unter Verwendung der in a) hergeleiteten Ungleichung, dass für alle natürlichen Zahlen \(n\geq2\) gilt: \(\frac{1}{\sqrt{1}}+\frac{1}{\sqrt{2}}+\cdots+\frac{1}{\sqrt{n}}>\sqrt{n}\)}
+\end{alphaparts}
+\end{document}
